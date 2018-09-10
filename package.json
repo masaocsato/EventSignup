@@ -1,0 +1,29 @@
+{
+  "name": "eventsignup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masaocsato/EventSignup.git"
+  },
+  "author": "Masa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masaocsato/EventSignup/issues"
+  },
+  "homepage": "https://github.com/masaocsato/EventSignup#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4",
+    "tedious": "^2.6.4",
+    "tedious-connection-pool": "^1.0.5"
+  }
+}
