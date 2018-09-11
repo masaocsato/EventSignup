@@ -4,11 +4,12 @@ const post = (req, res) => {
   const { eventName } = req.body;
   eventSignupService
     .post(eventName)
-    .then(response => {
-      console.log(response);
+    .then(result => {
+      console.log(result);
+      res.status(201).send(result);
     })
-    .then(Id => {
-      res.status(201).json(Id);
+    .catch(err => {
+      console.log(err, "Error from controller");
     });
 };
 
