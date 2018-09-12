@@ -11,3 +11,7 @@ export const getAllEvent = () => {
 export const putEvent = payload => {
   return axios.put("/eventsignup/", payload);
 };
+
+export const deleteEvent = id => {
+  return axios.delete("/eventsignup/" + id);
+};

@@ -37,7 +37,20 @@ const put = (req, res) => {
     .put(eventName, eventStartDate, eventEndDate, eventDetails, id)
     .then(result => {
       console.log(result);
-      res.status(201).send(result);
+      res.status(200).send(result);
+    })
+    .catch(err => {
+      console.log(err, "Error from controller");
+    });
+};
+
+const deleteEvent = (req, res) => {
+  const { id } = req.params;
+  eventSignupService
+    .deleteEvent(id)
+    .then(result => {
+      console.log(result);
+      res.status(200).send(result);
     })
     .catch(err => {
       console.log(err, "Error from controller");
@@ -47,5 +60,6 @@ const put = (req, res) => {
 module.exports = {
   post,
   get,
-  put
+  put,
+  deleteEvent
 };

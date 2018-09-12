@@ -6,3 +6,4 @@ module.exports = router;
 router.post("/", eventSignupController.post);
 router.get("/", eventSignupController.get);
 router.put("/", eventSignupController.put);
+router.delete("/:id", eventSignupController.deleteEvent);

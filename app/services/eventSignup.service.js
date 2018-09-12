@@ -40,7 +40,7 @@ const put = (eventName, eventStartDate, eventEndDate, eventDetails, id) => {
       request.addParameter("EventStartDate", TYPES.NVarChar, eventStartDate);
       request.addParameter("EventEndDate", TYPES.NVarChar, eventEndDate);
       request.addParameter("EventDetails", TYPES.NVarChar, eventDetails);
-      request.addParameter("Id", TYPES.NVarChar, id);
+      request.addParameter("Id", TYPES.Int, id);
     })
     .then(response => {
       const item = { eventId: response.outputParameters.Id };
@@ -52,7 +52,22 @@ const put = (eventName, eventStartDate, eventEndDate, eventDetails, id) => {
     });
 };
 
+const deleteEvent = id => {
+  return mssql
+    .executeProc("Event_Delete", request => {
+      request.addParameter("Id", TYPES.NVarChar, id);
+    })
+    .then(response => {
+      return response;
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
+
 module.exports = {
   post,
-  get
+  get,
+  put,
+  deleteEvent
 };

@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import Calendar from "react-big-calendar";
 // import DatePicker from "react-datepicker";
 import moment from "moment";
-import { postEvent, getAllEvent, putEvent } from "./service/event.service";
+import {
+  postEvent,
+  getAllEvent,
+  putEvent,
+  deleteEvent
+} from "./service/event.service";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
@@ -101,9 +106,17 @@ class App extends Component {
     }
   };
 
+  handleDeleteClick = id => {
+    deleteEvent(id.Id).then(response => {
+      console.log(response);
+      this.getAllEvents();
+    });
+  };
+
   handleEditClick = inputs => {
     this.setState(
       {
+        id: inputs.Id,
         eventName: inputs.EventName,
         eventStartDate: inputs.EventStartDate,
         eventEndDate: inputs.EventEndDate || "",
@@ -269,7 +282,9 @@ class App extends Component {
                   <button onClick={() => this.handleEditClick(item)}>
                     Edit
                   </button>{" "}
-                  <button>Delete</button>
+                  <button onClick={() => this.handleDeleteClick(item)}>
+                    Delete
+                  </button>
                 </div>
               </React.Fragment>
             ))}
