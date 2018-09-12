@@ -5,3 +5,4 @@ const eventSignupRoutes = require("../routes/eventSignup.routes");
 module.exports = router;
 
 router.use("/eventSignup", eventSignupRoutes);
+router.get("/eventSignup", eventSignupRoutes);
