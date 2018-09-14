@@ -11,6 +11,8 @@ import {
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
+// import EventMap from "./EventMap";
+import MapComponent from "./MapComponent";
 
 Calendar.setLocalizer(Calendar.momentLocalizer(moment));
 
@@ -30,7 +32,8 @@ class App extends Component {
     eventEndDate: "",
     eventDetails: "",
     multiDay: false,
-    submitBtn: "Post"
+    submitBtn: "Post",
+    addNew: false
   };
 
   componentDidMount() {
@@ -63,6 +66,12 @@ class App extends Component {
   handleChangeStart = date => {
     this.setState({
       eventStartDate: date
+    });
+  };
+
+  handleAddNew = () => {
+    this.setState({
+      addNew: !this.state.addNew
     });
   };
 
@@ -158,55 +167,57 @@ class App extends Component {
             marginLeft: "10px"
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column"
-            }}
-          >
-            <div style={{ flex: "0 1 auto", padding: "10px" }}>
-              <label>Event Name:</label>
-              <div>
-                <input
-                  type="text"
-                  value={this.state.eventName}
-                  name="eventName"
-                  onChange={this.onHandleChange}
-                />
-              </div>
-            </div>
-            <div style={{ flex: "0 1 auto", padding: "10px" }}>
-              <div style={{ marginBottom: "10px" }}>
-                <input
-                  type="checkbox"
-                  value={this.state.multiDay}
-                  name="multiDay"
-                  checked={this.state.multiDay}
-                  onChange={this.onHandleChange}
-                />
-                <label>Multiple Days?</label>
-              </div>
-              <label>Event Date:</label>
-              {/* <DatePicker
+          {this.state.addNew && (
+            <React.Fragment>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column"
+                }}
+              >
+                <div style={{ flex: "0 1 auto", padding: "10px" }}>
+                  <label>Event Name:</label>
+                  <div>
+                    <input
+                      type="text"
+                      value={this.state.eventName}
+                      name="eventName"
+                      onChange={this.onHandleChange}
+                    />
+                  </div>
+                </div>
+                <div style={{ flex: "0 1 auto", padding: "10px" }}>
+                  <div style={{ marginBottom: "10px" }}>
+                    <input
+                      type="checkbox"
+                      value={this.state.multiDay}
+                      name="multiDay"
+                      checked={this.state.multiDay}
+                      onChange={this.onHandleChange}
+                    />
+                    <label>Multiple Days?</label>
+                  </div>
+                  <label>Event Date:</label>
+                  {/* <DatePicker
                 // inline={true}
                 dropdownMode="select"
                 selected={this.state.eventStartDate}
                 onChange={this.handleChangeStart}
               /> */}
-              <div>
-                <input
-                  type="text"
-                  value={this.state.eventStartDate}
-                  name="eventStartDate"
-                  onChange={this.onHandleChange}
-                />
-              </div>
-            </div>
-            {this.state.multiDay && (
-              <React.Fragment>
-                <div style={{ flex: "0 1 auto", padding: "10px" }}>
-                  <label>Event Name:</label>
-                  {/* <DatePicker
+                  <div>
+                    <input
+                      type="text"
+                      value={this.state.eventStartDate}
+                      name="eventStartDate"
+                      onChange={this.onHandleChange}
+                    />
+                  </div>
+                </div>
+                {this.state.multiDay && (
+                  <React.Fragment>
+                    <div style={{ flex: "0 1 auto", padding: "10px" }}>
+                      <label>Event Name:</label>
+                      {/* <DatePicker
                         // inline={true}
                         dropdownMode="select"
                         minDate={this.state.eventStartDate}
@@ -214,42 +225,46 @@ class App extends Component {
                         selected={this.state.eventEndDate}
                         onChange={this.handleChangeEnd}
                       /> */}
-                  <div>
-                    <input
-                      type="text"
-                      value={this.state.eventEndDate}
-                      name="eventEndDate"
-                      onChange={this.onHandleChange}
-                    />
-                  </div>
-                </div>
-              </React.Fragment>
-            )}
-            <div style={{ flex: "0 1 auto", padding: "10px" }}>
-              <label>Event Details:</label>
-              {/* <DatePicker
+                      <div>
+                        <input
+                          type="text"
+                          value={this.state.eventEndDate}
+                          name="eventEndDate"
+                          onChange={this.onHandleChange}
+                        />
+                      </div>
+                    </div>
+                  </React.Fragment>
+                )}
+                <div style={{ flex: "0 1 auto", padding: "10px" }}>
+                  <label>Event Details:</label>
+                  {/* <DatePicker
                 // inline={true}
                 dropdownMode="select"
                 selected={this.state.eventStartDate}
                 onChange={this.handleChangeStart}
               /> */}
-              <div>
-                <textarea
-                  rows="5"
-                  value={this.state.eventDetails}
-                  name="eventDetails"
-                  onChange={this.onHandleChange}
-                />
+                  <div>
+                    <textarea
+                      rows="5"
+                      value={this.state.eventDetails}
+                      name="eventDetails"
+                      onChange={this.onHandleChange}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <button type="button" onClick={this.handleSubmitEvent}>
+                    {this.state.submitBtn}
+                  </button>
+                </div>
               </div>
+            </React.Fragment>
+          )}
+          <div style={{ marginLeft: "20px", marginTop: "10px" }}>
+            <div style={{ marginLeft: "5px" }}>
+              <button onClick={this.handleAddNew}>Add New Event</button>
             </div>
-            <div>
-              <button type="button" onClick={this.handleSubmitEvent}>
-                {this.state.submitBtn}
-              </button>
-            </div>
-          </div>
-
-          <div style={{ marginLeft: "30px" }}>
             {this.state.events.map((item, index) => (
               <React.Fragment key={item.Id}>
                 <div
@@ -288,6 +303,9 @@ class App extends Component {
                 </div>
               </React.Fragment>
             ))}
+          </div>
+          <div>
+            <MapComponent />
           </div>
         </div>
         <br />
