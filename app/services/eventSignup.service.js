@@ -1,13 +1,22 @@
 const mssql = require("../../mssql");
 const TYPES = require("tedious").TYPES;
 
-const post = (eventName, eventStartDate, eventEndDate, eventDetails) => {
+const post = (
+  eventName,
+  eventStartDate,
+  eventEndDate,
+  eventDetails,
+  lat,
+  lng
+) => {
   return mssql
     .executeProc("Event_Insert", request => {
       request.addParameter("EventName", TYPES.NVarChar, eventName);
       request.addParameter("EventStartDate", TYPES.NVarChar, eventStartDate);
       request.addParameter("EventEndDate", TYPES.NVarChar, eventEndDate);
       request.addParameter("EventDetails", TYPES.NVarChar, eventDetails);
+      request.addParameter("Lat", TYPES.NVarChar, lat);
+      request.addParameter("Lng", TYPES.NVarChar, lng);
       request.addOutputParameter("Id", TYPES.Int, null);
     })
     .then(response => {

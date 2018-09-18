@@ -1,29 +1,61 @@
 import React, { Component } from "react";
-import {
-  GoogleMap,
-  // InfoWindow,
-  Marker,
-  withGoogleMap
-} from "react-google-maps";
-const google = window.google;
+import GoogleMapReact from "google-map-react";
+import Marker from "./Marker";
+// import SearchBox from "./SearchBox";
+// const google = window.google;
+// import SearchBox from "react-google-maps/lib/components/places/SearchBox";
 
-class EventMap extends Component {
+// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+class SimpleMap extends Component {
+  static defaultProps = {
+    center: {
+      lat: 33.9803,
+      lng: -118.4517449
+    },
+    zoom: 11
+  };
+
   render() {
-    const mapPosition = new google.maps.LatLng(34.0522, -118.2437);
-    const GoogleMapExample = withGoogleMap(props => (
-      <GoogleMap defaultZoom={11} center={{ lat: 34.0522, lng: -118.2437 }}>
-        <Marker defaultIcon="assets/images/marker.png" position={mapPosition} />
-      </GoogleMap>
-    ));
-
     return (
-      <div>
-        <GoogleMapExample
-          containerElement={<div style={{ height: `500px`, width: "500px" }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-        />
+      // Important! Always set the container height explicitly
+      <div style={{ height: "600px", width: "1000px" }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "AIzaSyD7iu5CfoFeysqETwfFNxbBnnwupWKewWU" }}
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
+          onClick={this.props._onClick}
+        >
+          {/* <SearchBox
+            // style={{ position: "absolute", top: "5%", left: "10%" }}
+            placeholder={"123 anywhere st."}
+            onPlacesChanged={this.handleSearch}
+          /> */}
+          {this.props.events.map((event, index) => (
+            <Marker
+              key={event.Id}
+              lat={event.Lat}
+              lng={event.Lng}
+              text={event.EventName}
+              onClick={() => this.props.onMarkerClick(index)}
+              events={this.props.events}
+            />
+          ))}
+          {/* <Marker
+            lat={33.9125}
+            lng={-118.563}
+            text={"Kreyser Avrora"}
+            onClick={this.props.onMarkerClick}
+          /> */}
+          {/* <AnyReactComponent
+            lat={33.9125}
+            lng={-118.563}
+            text={"Kreyser Avrora"}
+          /> */}
+        </GoogleMapReact>
       </div>
     );
   }
 }
-export default EventMap;
+
+export default SimpleMap;

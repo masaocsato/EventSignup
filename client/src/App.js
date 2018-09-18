@@ -1,20 +1,21 @@
 import React, { Component } from "react";
-import Calendar from "react-big-calendar";
+// import Calendar from "react-big-calendar";
 // import DatePicker from "react-datepicker";
-import moment from "moment";
+// import moment from "moment";
 import {
   postEvent,
   getAllEvent,
   putEvent,
   deleteEvent
 } from "./service/event.service";
-
+import SearchBox from "./SearchBox";
+// import SearchBox from "react-google-maps/lib/components/places/SearchBox";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
-// import EventMap from "./EventMap";
-import MapComponent from "./MapComponent";
+import EventMap from "./EventMap";
+// import MapComponent from "./MapComponent";
 
-Calendar.setLocalizer(Calendar.momentLocalizer(moment));
+// Calendar.setLocalizer(Calendar.momentLocalizer(moment));
 
 class App extends Component {
   state = {
@@ -33,7 +34,10 @@ class App extends Component {
     eventDetails: "",
     multiDay: false,
     submitBtn: "Post",
-    addNew: false
+    addNew: false,
+    lat: 0,
+    lng: 0,
+    clickedEvent: {}
   };
 
   componentDidMount() {
@@ -71,7 +75,8 @@ class App extends Component {
 
   handleAddNew = () => {
     this.setState({
-      addNew: !this.state.addNew
+      addNew: !this.state.addNew,
+      clickedEvent: {}
     });
   };
 
@@ -82,12 +87,15 @@ class App extends Component {
   };
 
   handleSubmitEvent = () => {
+    // this.sendCoords();
     const payload = {
       eventName: this.state.eventName,
       eventStartDate: this.state.eventStartDate,
       eventEndDate: this.state.eventEndDate,
       eventDetails: this.state.eventDetails,
-      id: this.state.id
+      id: this.state.id,
+      lat: this.state.lat,
+      lng: this.state.lng
     };
     if (this.state.submitBtn === "Post") {
       postEvent(payload).then(response => {
@@ -113,6 +121,14 @@ class App extends Component {
         });
       });
     }
+  };
+
+  _onClick = ({ x, y, lat, lng, event }) => {
+    this.setState({
+      lat,
+      lng
+    });
+    console.log(x, y, lat, lng, event);
   };
 
   handleDeleteClick = id => {
@@ -144,6 +160,22 @@ class App extends Component {
       });
     }
   };
+
+  onMarkerClick = index => {
+    console.log("clicked marker");
+    let clickedEvent = this.state.events[index];
+    this.setState({
+      addNew: false,
+      clickedEvent: clickedEvent
+    });
+  };
+
+  // sendCoords = (lat, lng) => {
+  //   this.setState({
+  //     lat: lat,
+  //     lng: lng
+  //   });
+  // };
 
   render() {
     return (
@@ -216,7 +248,7 @@ class App extends Component {
                 {this.state.multiDay && (
                   <React.Fragment>
                     <div style={{ flex: "0 1 auto", padding: "10px" }}>
-                      <label>Event Name:</label>
+                      <label>Event End Date:</label>
                       {/* <DatePicker
                         // inline={true}
                         dropdownMode="select"
@@ -239,11 +271,11 @@ class App extends Component {
                 <div style={{ flex: "0 1 auto", padding: "10px" }}>
                   <label>Event Details:</label>
                   {/* <DatePicker
-                // inline={true}
-                dropdownMode="select"
-                selected={this.state.eventStartDate}
-                onChange={this.handleChangeStart}
-              /> */}
+                    // inline={true}
+                    dropdownMode="select"
+                    selected={this.state.eventStartDate}
+                    onChange={this.handleChangeStart}
+                  /> */}
                   <div>
                     <textarea
                       rows="5"
@@ -252,6 +284,9 @@ class App extends Component {
                       onChange={this.onHandleChange}
                     />
                   </div>
+                  <h3>Click on map to change lat/long</h3>
+                  <div>Lat: {this.state.lat}</div>
+                  <div>Long: {this.state.lng}</div>
                 </div>
                 <div>
                   <button type="button" onClick={this.handleSubmitEvent}>
@@ -294,9 +329,21 @@ class App extends Component {
                       {item.EventDetails}
                     </div>
                   )}
+                  {item.Lat && (
+                    <div>
+                      Lat:
+                      {item.Lat}
+                    </div>
+                  )}
+                  {item.Lng && (
+                    <div>
+                      Long:
+                      {item.Lng}
+                    </div>
+                  )}
                   <button onClick={() => this.handleEditClick(item)}>
                     Edit
-                  </button>{" "}
+                  </button>
                   <button onClick={() => this.handleDeleteClick(item)}>
                     Delete
                   </button>
@@ -305,7 +352,42 @@ class App extends Component {
             ))}
           </div>
           <div>
-            <MapComponent />
+            {/* <MapComponent sendCoords={this.sendCoords} /> */}
+
+            <SearchBox
+              placeholder={"123 anywhere st."}
+              onPlacesChanged={this.handleSearch}
+            />
+            <EventMap
+              _onClick={this._onClick}
+              onMarkerClick={this.onMarkerClick}
+              events={this.state.events}
+            />
+          </div>
+          <div
+            style={
+              {
+                // display: "flex"
+                // flexDirection: "row"
+              }
+            }
+          >
+            {this.state.clickedEvent && (
+              <React.Fragment>
+                <h2>{this.state.clickedEvent.EventName}</h2>
+                <div>
+                  {this.state.clickedEvent.EventStartDate}
+                  {this.state.clickedEvent.EventEndDate && (
+                    <React.Fragment>
+                      {" "}
+                      - {this.state.clickedEvent.EventEndDate}
+                    </React.Fragment>
+                  )}{" "}
+                </div>
+                <div>{this.state.clickedEvent.EventDetails}</div>
+                <div />
+              </React.Fragment>
+            )}
           </div>
         </div>
         <br />

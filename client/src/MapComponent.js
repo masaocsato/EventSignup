@@ -11,8 +11,12 @@ export class MapContainer extends Component {
     fields: {
       location: {
         lat: 0,
-        long: 0
+        lng: 0
       }
+    },
+    currentLocation: {
+      lat: 0,
+      lng: 0
     }
   };
 
@@ -26,19 +30,22 @@ export class MapContainer extends Component {
 
   async componentDidMount() {
     const { lat, lng } = await this.getcurrentLocation();
-    this.setState(prev => ({
-      fields: {
-        ...prev.fields,
-        location: {
+    this.setState(
+      prev => ({
+        fields: {
+          ...prev.fields,
+          location: {
+            lat,
+            lng
+          }
+        },
+        currentLocation: {
           lat,
           lng
         }
-      },
-      currentLocation: {
-        lat,
-        lng
-      }
-    }));
+      })
+      // () => this.props.sendCoords(lat, lng)
+    );
   }
 
   getcurrentLocation() {
@@ -66,7 +73,13 @@ export class MapContainer extends Component {
         location
       }
     }));
-    map.panTo(location);
+    // map.panTo(location);
+  };
+
+  handleClick = event => {
+    let lat = event.latLng.lat();
+    let lng = event.latLng.lng();
+    console.log(lat, lng);
   };
 
   render() {
@@ -84,9 +97,11 @@ export class MapContainer extends Component {
             width: "1000px"
           }}
           google={this.props.google}
-          zoom={14}
-          center={{ lat: 34.0522, lng: -118.2437 }}
-          onClick={(t, map, c) => this.addMarker(c.latLng, map)}
+          zoom={11}
+          onClick={this.props._onClick}
+          // center={{ lat: 34.0522, lng: -118 }}
+          // onClick={(t, map, c) => this.addMarker(c.latLng, map)}
+          // onClick={e => this.handleClick(e)}
         >
           <Marker
             onClick={this.onMarkerClick}

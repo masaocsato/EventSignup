@@ -1,9 +1,16 @@
 const eventSignupService = require("../services/eventSignup.service");
 
 const post = (req, res) => {
-  const { eventName, eventStartDate, eventEndDate, eventDetails } = req.body;
+  const {
+    eventName,
+    eventStartDate,
+    eventEndDate,
+    eventDetails,
+    lat,
+    lng
+  } = req.body;
   eventSignupService
-    .post(eventName, eventStartDate, eventEndDate, eventDetails)
+    .post(eventName, eventStartDate, eventEndDate, eventDetails, lat, lng)
     .then(result => {
       console.log(result);
       res.status(201).send(result);
