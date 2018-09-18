@@ -12,6 +12,7 @@ import SearchBox from "./SearchBox";
 // import SearchBox from "react-google-maps/lib/components/places/SearchBox";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
+import "./App.css";
 import EventMap from "./EventMap";
 import EventModal from "./EventModal";
 // import MapComponent from "./MapComponent";
@@ -71,7 +72,7 @@ class App extends Component {
     const target = event.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
     const name = target.name;
-
+    console.log(event);
     this.setState({
       [name]: value
     });
@@ -274,11 +275,13 @@ class App extends Component {
                   </div>
                   <label>Event Date:</label>
                   {/* <DatePicker
-                // inline={true}
-                dropdownMode="select"
-                selected={this.state.eventStartDate}
-                onChange={this.handleChangeStart}
-              /> */}
+                    style={{ paddingLeft: "0px" }}
+                    dropdownMode="select"
+                    selected={moment(this.state.eventStartDate)}
+                    onChange={this.handleChangeStart}
+                    showTimeSelect
+                    dateFormat="LLL"
+                  /> */}
                   <div>
                     <input
                       type="text"
