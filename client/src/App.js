@@ -13,6 +13,7 @@ import SearchBox from "./SearchBox";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
 import EventMap from "./EventMap";
+import EventModal from "./EventModal";
 // import MapComponent from "./MapComponent";
 
 // Calendar.setLocalizer(Calendar.momentLocalizer(moment));
@@ -35,14 +36,23 @@ class App extends Component {
     multiDay: false,
     submitBtn: "Post",
     addNew: false,
+    editMode: false,
     lat: 0,
     lng: 0,
-    clickedEvent: {}
+    clickedEvent: {},
+    modal: false
+    // isOpen: false
   };
 
   componentDidMount() {
     this.getAllEvents();
   }
+
+  toggle = () => {
+    this.setState({
+      modal: !this.state.modal
+    });
+  };
 
   getAllEvents = () => {
     getAllEvent().then(response => {
@@ -97,28 +107,42 @@ class App extends Component {
       lat: this.state.lat,
       lng: this.state.lng
     };
-    if (this.state.submitBtn === "Post") {
+    if (!this.state.editMode) {
       postEvent(payload).then(response => {
         console.log(response, "Success");
         this.getAllEvents();
-        this.setState({
-          eventName: "",
-          eventStartDate: "",
-          eventEndDate: "",
-          eventDetails: ""
-        });
+        this.setState(
+          {
+            eventName: "",
+            eventStartDate: "",
+            eventEndDate: "",
+            eventDetails: "",
+            lat: 0,
+            lng: 0,
+            addNew: false,
+            editMode: false
+          },
+          () => this.getAllEvents()
+        );
       });
     } else {
       putEvent(payload).then(response => {
         console.log(response, "Success");
         this.getAllEvents();
-        this.setState({
-          eventName: "",
-          eventStartDate: "",
-          eventEndDate: "",
-          eventDetails: "",
-          submitBtn: "Post"
-        });
+        this.setState(
+          {
+            eventName: "",
+            eventStartDate: "",
+            eventEndDate: "",
+            eventDetails: "",
+            submitBtn: "Post",
+            lat: 0,
+            lng: 0,
+            addNew: false,
+            editMode: false
+          },
+          () => this.getAllEvents()
+        );
       });
     }
   };
@@ -147,10 +171,28 @@ class App extends Component {
         eventEndDate: inputs.EventEndDate || "",
         eventDetails: inputs.EventDetails || "",
         submitBtn: "Edit",
-        multiDay: false
+        multiDay: false,
+        lat: inputs.Lat || 0,
+        lng: inputs.Lng || 0,
+        addNew: true,
+        editMode: true
       },
       () => this.multiDayEdit(inputs)
     );
+  };
+
+  cancelSubmitEvent = () => {
+    this.setState({
+      eventName: "",
+      eventStartDate: "",
+      eventEndDate: "",
+      eventDetails: "",
+      submitBtn: "Post",
+      lat: 0,
+      lng: 0,
+      addNew: false,
+      editMode: false
+    });
   };
 
   multiDayEdit = inputs => {
@@ -168,6 +210,7 @@ class App extends Component {
       addNew: false,
       clickedEvent: clickedEvent
     });
+    this.toggle();
   };
 
   // sendCoords = (lat, lng) => {
@@ -292,6 +335,9 @@ class App extends Component {
                   <button type="button" onClick={this.handleSubmitEvent}>
                     {this.state.submitBtn}
                   </button>
+                  <button type="button" onClick={this.cancelSubmitEvent}>
+                    Cancel
+                  </button>
                 </div>
               </div>
             </React.Fragment>
@@ -323,13 +369,13 @@ class App extends Component {
                       {item.EventEndDate}
                     </div>
                   )}
-                  {item.EventDetails && (
+                  {/* {item.EventDetails && (
                     <div>
                       Details:
                       {item.EventDetails}
                     </div>
-                  )}
-                  {item.Lat && (
+                  )} */}
+                  {/* {item.Lat && (
                     <div>
                       Lat:
                       {item.Lat}
@@ -340,7 +386,7 @@ class App extends Component {
                       Long:
                       {item.Lng}
                     </div>
-                  )}
+                  )} */}
                   <button onClick={() => this.handleEditClick(item)}>
                     Edit
                   </button>
@@ -362,6 +408,9 @@ class App extends Component {
               _onClick={this._onClick}
               onMarkerClick={this.onMarkerClick}
               events={this.state.events}
+              editMode={this.state.addNew}
+              lat={this.state.lat}
+              lng={this.state.lng}
             />
           </div>
           <div
@@ -372,7 +421,7 @@ class App extends Component {
               }
             }
           >
-            {this.state.clickedEvent && (
+            {/* {this.state.clickedEvent && (
               <React.Fragment>
                 <h2>{this.state.clickedEvent.EventName}</h2>
                 <div>
@@ -382,16 +431,21 @@ class App extends Component {
                       {" "}
                       - {this.state.clickedEvent.EventEndDate}
                     </React.Fragment>
-                  )}{" "}
+                  )}
                 </div>
                 <div>{this.state.clickedEvent.EventDetails}</div>
                 <div />
               </React.Fragment>
-            )}
+            )} */}
           </div>
         </div>
         <br />
         <br />
+        <EventModal
+          toggle={this.toggle}
+          modal={this.state.modal}
+          clickedEvent={this.state.clickedEvent}
+        />
       </div>
     );
   }

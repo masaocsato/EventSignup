@@ -26,11 +26,6 @@ class SimpleMap extends Component {
           defaultZoom={this.props.zoom}
           onClick={this.props._onClick}
         >
-          {/* <SearchBox
-            // style={{ position: "absolute", top: "5%", left: "10%" }}
-            placeholder={"123 anywhere st."}
-            onPlacesChanged={this.handleSearch}
-          /> */}
           {this.props.events.map((event, index) => (
             <Marker
               key={event.Id}
@@ -41,12 +36,12 @@ class SimpleMap extends Component {
               events={this.props.events}
             />
           ))}
-          {/* <Marker
-            lat={33.9125}
-            lng={-118.563}
-            text={"Kreyser Avrora"}
-            onClick={this.props.onMarkerClick}
-          /> */}
+          <Marker
+            lat={this.props.lat}
+            lng={this.props.lng}
+            text={"new marker"}
+            // onClick={this.props.onMarkerClick}
+          />
           {/* <AnyReactComponent
             lat={33.9125}
             lng={-118.563}

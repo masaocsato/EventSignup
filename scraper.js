@@ -1,5 +1,6 @@
 const cheerio = require("cheerio");
 const axios = require("axios");
+const fs = require("fs");
 // import { scraperInsert } from './client/src/service/scraper.service'
 
 axios("https://www.pcgamer.com")
@@ -32,6 +33,10 @@ axios("https://www.pcgamer.com")
     });
 
     console.log(JSON.stringify(articles, null, 2));
+    fs.writeFile("scrapedData.txt", JSON.stringify(articles, null, 2), err => {
+      if (err) throw err;
+      console.log("File Saved");
+    });
   })
   .catch(err => {
     console.log(err);

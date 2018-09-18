@@ -38,10 +38,12 @@ const put = (req, res) => {
     eventStartDate,
     eventEndDate,
     eventDetails,
+    lat,
+    lng,
     id
   } = req.body;
   eventSignupService
-    .put(eventName, eventStartDate, eventEndDate, eventDetails, id)
+    .put(eventName, eventStartDate, eventEndDate, eventDetails, lat, lng, id)
     .then(result => {
       console.log(result);
       res.status(200).send(result);

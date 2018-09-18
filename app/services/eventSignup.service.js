@@ -42,19 +42,28 @@ const get = () => {
     });
 };
 
-const put = (eventName, eventStartDate, eventEndDate, eventDetails, id) => {
+const put = (
+  eventName,
+  eventStartDate,
+  eventEndDate,
+  eventDetails,
+  lat,
+  lng,
+  id
+) => {
   return mssql
     .executeProc("Event_Update", request => {
       request.addParameter("EventName", TYPES.NVarChar, eventName);
       request.addParameter("EventStartDate", TYPES.NVarChar, eventStartDate);
       request.addParameter("EventEndDate", TYPES.NVarChar, eventEndDate);
       request.addParameter("EventDetails", TYPES.NVarChar, eventDetails);
+      request.addParameter("Lat", TYPES.NVarChar, lat);
+      request.addParameter("Lng", TYPES.NVarChar, lng);
       request.addParameter("Id", TYPES.Int, id);
     })
     .then(response => {
-      const item = { eventId: response.outputParameters.Id };
       console.log(response, "service then");
-      return item;
+      return response;
     })
     .catch(err => {
       console.log(err);

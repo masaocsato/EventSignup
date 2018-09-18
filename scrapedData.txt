@@ -1,0 +1,425 @@
+[
+  {
+    "title": "Amazon’s MMO, New World, shows off its diverse locations in new screenshots",
+    "url": "https://www.pcgamer.com/amazons-mmo-new-world-shows-off-its-diverse-locations-in-new-screenshots/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/WtXFk722dTs4sJ79zSuutY-320-80.jpg"
+  },
+  {
+    "title": "Amazon’s MMO, New World, shows off its diverse locations in new screenshots",
+    "url": "https://www.pcgamer.com/amazons-mmo-new-world-shows-off-its-diverse-locations-in-new-screenshots/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/WtXFk722dTs4sJ79zSuutY-320-80.jpg"
+  },
+  {
+    "title": "How to enhance your Windows desktop",
+    "url": "https://www.pcgamer.com/how-to-enhance-your-windows-desktop/"
+  },
+  {
+    "title": "9 annoying things that enemies in games should stop doing",
+    "url": "https://www.pcgamer.com/9-annoying-things-that-enemies-in-games-should-stop-doing/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/cERdbCtfZZqvt2LVvHNidG-320-80.jpg"
+  },
+  {
+    "title": "Steam's first uncensored adult game release restricted in 28 countries ",
+    "url": "https://www.pcgamer.com/steams-first-uncensored-adult-game-release-restricted-in-28-countries/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/dnBuYdrzdHZwSMgtoXwnzc-320-80.jpg"
+  },
+  {
+    "title": "Just Cause 4 is at its best when it gives zero shits about reality",
+    "url": "https://www.pcgamer.com/just-cause-4-is-at-its-best-when-it-gives-zero-shits-about-reality/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/tyxtiTSe5Wmisrzef6scNN-320-80.jpg"
+  },
+  {
+    "title": "Sea of Thieves expansion Forsaken Shores has been delayed",
+    "author": "\nBy\n\nAndy Chalk \n",
+    "url": "https://www.pcgamer.com/sea-of-thieves-expansion-forsaken-shores-has-been-delayed/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/X7eCCYZRP9p2RPiVoansRk.jpg"
+  },
+  {
+    "title": "New Gundam Breaker comes to Steam next week",
+    "author": "\nBy\n\nAndy Chalk \n",
+    "url": "https://www.pcgamer.com/new-gundam-breaker-comes-to-steam-next-week/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/f6Ta6GQpxiDLCQpNW9ToqX.jpg"
+  },
+  {
+    "title": "Interplay co-founder Brian Fargo wants to buy it back",
+    "author": "\nBy\n\nAndy Chalk \n",
+    "url": "https://www.pcgamer.com/interplay-co-founder-brian-fargo-wants-to-buy-it-back/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/xFsFSATgyFgdjDJH3KTHYU.gif"
+  },
+  {
+    "title": "Save $50 on this Ryzen 7 2700X CPU and Asus ROG X470 motherboard combo",
+    "author": "\nBy\n\nPaul Lilly \n",
+    "url": "https://www.pcgamer.com/save-dollar50-on-this-ryzen-7-2700x-cpu-and-asus-rog-x470-motherboard-combo/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/DvqKwrdjgSbsrshwpmJfhZ.jpg"
+  },
+  {
+    "title": "GOG is giving away four classic oldies and some 'validation'",
+    "author": "\nBy\n\nAndy Chalk \n",
+    "url": "https://www.pcgamer.com/gog-is-giving-away-four-free-games/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/YVcam5gYNHeSw9DhMvCp4G.jpg"
+  },
+  {
+    "title": "The Xbox One wireless controller is $40 ($10 off) on Amazon",
+    "author": "\nBy\n\nCorbin Davenport \n",
+    "url": "https://www.pcgamer.com/the-xbox-one-wireless-controller-is-dollar40-dollar10-off-on-amazon/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/ytpFcTLNxXSigWDzpWwEWg.jpg"
+  },
+  {
+    "title": "LawBreakers is gone for good, unreleased map art revealed",
+    "author": "\nBy\n\nAndy Chalk \n",
+    "url": "https://www.pcgamer.com/lawbreakers-is-gone-for-good-unreleased-map-art-revealed/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/2ciPRtqJBzWUdXZ8nyCMc7.jpg"
+  },
+  {
+    "title": "Get a 1TB Crucial MX500 solid state drive for $151 today",
+    "author": "\nBy\n\nPaul Lilly \n",
+    "url": "https://www.pcgamer.com/get-a-1tb-crucial-mx500-solid-state-drive-for-dollar151-today/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/exuTs5No7xGosfqoRURuXh.jpg"
+  },
+  {
+    "title": "Boyfriend Dungeon smashes Kickstarter goal, coming in 2019",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/boyfriend-dungeon-smashes-kickstarter-goal-coming-in-2019/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/QTh7SqQFYEVaPcAvnnaoF5.jpg"
+  },
+  {
+    "title": "Linus Torvalds is taking time off from Linux to work on his ‘unprofessional’ attitude",
+    "author": "\nBy\n\nPaul Lilly \n",
+    "url": "https://www.pcgamer.com/linus-torvalds-is-taking-time-off-from-linux-to-work-on-his-unprofessional-attitude/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/825xayjzgpZzJiHLWDq8RN.jpg"
+  },
+  {
+    "title": "Red Dead Redemption 2 shows off new towns and areas",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/red-dead-redemption-2-shows-off-new-towns-and-areas/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/MCUzX5RCCnvtoGiwgy6A5U.jpg"
+  },
+  {
+    "title": "The original Intel Compute Stick is just $35 right now",
+    "author": "\nBy\n\nCorbin Davenport \n",
+    "url": "https://www.pcgamer.com/the-original-intel-compute-stick-is-just-dollar35-right-now/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/BAXzHWHdgnKMPULQJ6d3ca.jpg"
+  },
+  {
+    "title": "Steam's first uncensored adult game release restricted in 28 countries ",
+    "author": "\nBy\n\nJoe Donnelly \n",
+    "url": "https://www.pcgamer.com/steams-first-uncensored-adult-game-release-restricted-in-28-countries/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/dnBuYdrzdHZwSMgtoXwnzc.jpg"
+  },
+  {
+    "title": "15 European regulators have come together to help tackle loot boxes",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/15-european-regulators-unite-to-address-loot-boxes/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/3rbTYqYrtkKGKApHygpYfN.jpg"
+  },
+  {
+    "title": "Amazon’s MMO, New World, shows off its diverse locations in new screenshots",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/amazons-mmo-new-world-shows-off-its-diverse-locations-in-new-screenshots/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/WtXFk722dTs4sJ79zSuutY.jpg"
+  },
+  {
+    "title": "Rebel Galaxy Outlaw adds two of its most requested features following feedback",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/rebel-galaxy-outlaw-adds-two-of-its-most-requested-features-following-feedback/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/abT5okq6BBkexRbPMCxKRn.jpg"
+  },
+  {
+    "title": "After 200 hours of work, all 46 of Dark Souls 3's lore epitaphs have been found",
+    "author": "\nBy\n\nJoe Donnelly \n",
+    "url": "https://www.pcgamer.com/after-200-hours-of-work-all-46-of-dark-souls-3s-lore-epitaphs-have-been-found/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/tNU5WexQHP9HJQktT53riB.jpg"
+  },
+  {
+    "title": "Multiplayer medieval melee Mordhau adds a bunch of new stuff",
+    "author": "\nBy\n\nJody Macgregor \n",
+    "url": "https://www.pcgamer.com/multiplayer-medieval-melee-mordhau-adds-a-bunch-of-new-stuff/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/MwBJCTXVhe8o3V5wgPqEVd.jpg"
+  },
+  {
+    "title": "Treyarch working on Black Ops 4 battle royale PC beta crashes and aim tracking bug",
+    "author": "\nBy\n\nSamuel Horti \n",
+    "url": "https://www.pcgamer.com/treyarch-working-on-black-ops-4-battle-royale-pc-beta-crashes-and-aim-tracking-bug/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/WxjPATLNGqiSRHPLLaaKu4.jpg"
+  },
+  {
+    "title": "Battlefield 5 devs assure fans that they're still making massive maps",
+    "author": "\nBy\n\nSamuel Horti \n",
+    "url": "https://www.pcgamer.com/battlefield-5-devs-assure-fans-that-theyre-still-making-massive-maps/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/SupxRgexV6WWyNPcHRJAM4.jpg"
+  },
+  {
+    "title": "The Xbox One wireless controller is $40 ($10 off) on Amazon",
+    "author": "\nBy\n\nCorbin Davenport \n",
+    "url": "https://www.pcgamer.com/the-xbox-one-wireless-controller-is-dollar40-dollar10-off-on-amazon/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/ytpFcTLNxXSigWDzpWwEWg.jpg"
+  },
+  {
+    "title": "LawBreakers is gone for good, unreleased map art revealed",
+    "author": "\nBy\n\nAndy Chalk \n",
+    "url": "https://www.pcgamer.com/lawbreakers-is-gone-for-good-unreleased-map-art-revealed/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/2ciPRtqJBzWUdXZ8nyCMc7.jpg"
+  },
+  {
+    "title": "Get a 1TB Crucial MX500 solid state drive for $151 today",
+    "author": "\nBy\n\nPaul Lilly \n",
+    "url": "https://www.pcgamer.com/get-a-1tb-crucial-mx500-solid-state-drive-for-dollar151-today/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/exuTs5No7xGosfqoRURuXh.jpg"
+  },
+  {
+    "title": "Boyfriend Dungeon smashes Kickstarter goal, coming in 2019",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/boyfriend-dungeon-smashes-kickstarter-goal-coming-in-2019/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/QTh7SqQFYEVaPcAvnnaoF5.jpg"
+  },
+  {
+    "title": "Linus Torvalds is taking time off from Linux to work on his ‘unprofessional’ attitude",
+    "author": "\nBy\n\nPaul Lilly \n",
+    "url": "https://www.pcgamer.com/linus-torvalds-is-taking-time-off-from-linux-to-work-on-his-unprofessional-attitude/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/825xayjzgpZzJiHLWDq8RN.jpg"
+  },
+  {
+    "title": "Red Dead Redemption 2 shows off new towns and areas",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/red-dead-redemption-2-shows-off-new-towns-and-areas/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/MCUzX5RCCnvtoGiwgy6A5U.jpg"
+  },
+  {
+    "title": "The original Intel Compute Stick is just $35 right now",
+    "author": "\nBy\n\nCorbin Davenport \n",
+    "url": "https://www.pcgamer.com/the-original-intel-compute-stick-is-just-dollar35-right-now/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/BAXzHWHdgnKMPULQJ6d3ca.jpg"
+  },
+  {
+    "title": "Steam's first uncensored adult game release restricted in 28 countries ",
+    "author": "\nBy\n\nJoe Donnelly \n",
+    "url": "https://www.pcgamer.com/steams-first-uncensored-adult-game-release-restricted-in-28-countries/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/dnBuYdrzdHZwSMgtoXwnzc.jpg"
+  },
+  {
+    "title": "15 European regulators have come together to help tackle loot boxes",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/15-european-regulators-unite-to-address-loot-boxes/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/3rbTYqYrtkKGKApHygpYfN.jpg"
+  },
+  {
+    "title": "Amazon’s MMO, New World, shows off its diverse locations in new screenshots",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/amazons-mmo-new-world-shows-off-its-diverse-locations-in-new-screenshots/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/WtXFk722dTs4sJ79zSuutY.jpg"
+  },
+  {
+    "title": "Rebel Galaxy Outlaw adds two of its most requested features following feedback",
+    "author": "\nBy\n\nSarah James \n",
+    "url": "https://www.pcgamer.com/rebel-galaxy-outlaw-adds-two-of-its-most-requested-features-following-feedback/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/abT5okq6BBkexRbPMCxKRn.jpg"
+  },
+  {
+    "title": "After 200 hours of work, all 46 of Dark Souls 3's lore epitaphs have been found",
+    "author": "\nBy\n\nJoe Donnelly \n",
+    "url": "https://www.pcgamer.com/after-200-hours-of-work-all-46-of-dark-souls-3s-lore-epitaphs-have-been-found/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/tNU5WexQHP9HJQktT53riB.jpg"
+  },
+  {
+    "title": "Multiplayer medieval melee Mordhau adds a bunch of new stuff",
+    "author": "\nBy\n\nJody Macgregor \n",
+    "url": "https://www.pcgamer.com/multiplayer-medieval-melee-mordhau-adds-a-bunch-of-new-stuff/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/MwBJCTXVhe8o3V5wgPqEVd.jpg"
+  },
+  {
+    "title": "The PC Gamer Top 100",
+    "author": "\nBy\n\nPC Gamer \n",
+    "url": "https://www.pcgamer.com/the-pc-gamer-top-100-new/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/wn6eTnibh6a4eQjiPm3feJ.png"
+  },
+  {
+    "title": "",
+    "author": ""
+  },
+  {
+    "title": "Best SSD deals of the week",
+    "author": "\nBy\n\nPC Gamer \n",
+    "url": "https://www.pcgamer.com/best-ssd-deals-today/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/3pBz84KvfpqB3p8UNBX5PJ.jpg"
+  },
+  {
+    "title": "The best Fortnite stat trackers and how to use them",
+    "author": "\nBy\n\nFord James \n",
+    "url": "https://www.pcgamer.com/best-fortnite-stat-trackers/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/SZfz3em645J7qh2LUQYrxV.jpg"
+  },
+  {
+    "title": "The best Fortnite skins",
+    "author": "\nBy\n\nSamuel Horti, \n\nAron Garst \n",
+    "url": "https://www.pcgamer.com/best-fortnite-skins/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/qr3egCWJcCuyoUnK7XjYNV.jpg"
+  },
+  {
+    "title": "Monster Hunter World's kickass armor sets inspire some amazing cosplay",
+    "author": "\nBy\n\nJody Macgregor \n",
+    "url": "https://www.pcgamer.com/monster-hunter-worlds-kickass-armor-sets-inspire-some-amazing-cosplay/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/st5ZKrFRr3puo4QScEFkAM.jpg"
+  },
+  {
+    "title": "Five new Steam games you probably missed (September 17, 2018)",
+    "author": "\nBy\n\nShaun Prescott \n",
+    "url": "https://www.pcgamer.com/five-new-steam-games-you-probably-missed-september-17-2018/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/PeRMc9nPciha5y4BqJHRCJ.jpg"
+  },
+  {
+    "title": "Great moments in PC gaming: The Shodan Reveal in System Shock 2",
+    "author": "\nBy\n\nJody Macgregor \n",
+    "url": "https://www.pcgamer.com/great-moments-in-pc-gaming-the-shodan-reveal-in-system-shock-2/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/a3vznBF2e3UQkFHyrrs8xd.jpg"
+  },
+  {
+    "title": "What did you play last week?",
+    "author": "\nBy\n\nJody Macgregor \n",
+    "url": "https://www.pcgamer.com/what-did-you-play-last-week-sep-16-2018/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/HkYKPsXc8SbvYPRks9psFL.jpg"
+  },
+  {
+    "title": "Blackout map guide: The best drop locations in Black Ops 4 battle royale",
+    "author": "\nBy\n\nOmri Petitte \n",
+    "url": "https://www.pcgamer.com/blackout-map-guide-best-drop-location-black-ops-4/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/EJk6EGijPMWZ4m7b8NHMe8.jpg"
+  },
+  {
+    "title": "Which game series should take a break?",
+    "author": "\nBy\n\nPC Gamer \n",
+    "url": "https://www.pcgamer.com/which-game-series-should-take-a-break/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/TnCkCQPMZN8gdfAxKwSYv6.jpg"
+  },
+  {
+    "title": "The best laptop and low-spec PC games",
+    "author": "\nBy\n\nPC Gamer \n",
+    "url": "https://www.pcgamer.com/best-laptop-games/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/FnnwVZzkTgZMa8YgSpUM9g.jpg"
+  },
+  {
+    "title": "It's Batman Day, so let's rank the Arkham games from worst to best",
+    "author": "\nBy\n\nAndy Kelly \n",
+    "url": "https://www.pcgamer.com/the-batman-arkham-games-ranked-from-worst-to-best/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/eKBhYJSm93srEmJVD27erP.jpg"
+  },
+  {
+    "title": "Wandersong makes being a bard not suck for once",
+    "author": "\nBy\n\nJody Macgregor \n",
+    "url": "https://www.pcgamer.com/wandersong-makes-being-a-bard-not-suck-for-once/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/grK93LXeeka4SBJWiDQSvQ.jpg"
+  },
+  {
+    "title": "How to use Fortnite's spike traps to rack up quiet kills",
+    "author": "\nBy\n\nPC Gamer \n",
+    "url": "https://www.pcgamer.com/fortnite-spike-trap-guide/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/7dJgyyKs3TbJJ5MxtqG25U.jpg"
+  },
+  {
+    "title": "Free games of the week",
+    "author": "\nBy\n\nTom Sykes \n",
+    "url": "https://www.pcgamer.com/free-games-of-the-week/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/ocPWHdbaZMqCsdNfRgLjsQ.jpg"
+  },
+  {
+    "title": "The making of Total Annihilation ",
+    "author": "\nBy\n\nErlingur Einarsson \n",
+    "url": "https://www.pcgamer.com/the-making-of-total-annihilation/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/4jyqFFyLzMBQS9E73h6q9j.jpg"
+  },
+  {
+    "title": "What we think of Black Ops 4's battle royale mode so far",
+    "author": "\nBy\n\nTyler Wilde, \n\nJames Davenport, \n\nChristopher Livingston \n",
+    "url": "https://www.pcgamer.com/what-we-think-of-black-ops-4s-battle-royale-mode-so-far/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/3ND9TC3BXZLmoce53hyJqT.jpg"
+  },
+  {
+    "title": "This week's highs and lows in PC gaming",
+    "author": "\nBy\n\nPC Gamer \n",
+    "url": "https://www.pcgamer.com/this-weeks-highs-and-lows-in-pc-gaming-september-14-2018/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/3qh4ghGPfprE6vAMfBpb68.jpg"
+  },
+  {
+    "title": "Destiny 2: Forsaken power leveling guide: How to grind efficiently",
+    "author": "\nBy\n\nAustin Wood \n",
+    "url": "https://www.pcgamer.com/destiny-2-forsaken-power-leveling-guide-how-to-grind-efficiently/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/jyLHPoKJvmVcGF8X8EEozK.png"
+  },
+  {
+    "title": "Sony's backwards stance on cross-play hurts games as a whole",
+    "author": "\nBy\n\nSteven Messner \n",
+    "url": "https://www.pcgamer.com/playstation-4-fortnite-cross-play/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/wmvZobzjJN3YrTja8D6dad.jpg"
+  },
+  {
+    "title": "BlizzCon 2018: When it starts, and what announcements we expect",
+    "author": "\nBy\n\nT.J. Hafer \n",
+    "url": "https://www.pcgamer.com/blizzcon-2018-dates-virtual-ticket-announcements-rumors-schedule/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/dLKpww2aqrZfWxQ82wmJGE.jpg"
+  },
+  {
+    "title": "Everything we know about Fortnite Season 6",
+    "author": "\nBy\n\nJames Davenport \n",
+    "url": "https://www.pcgamer.com/fortnite-season-6-everything-we-know/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/VYgY3RJNAbcXMPtCyZYiM8.jpg"
+  },
+  {
+    "title": "ViewSonic VP3881 monitor review",
+    "author": "\nBy\n\nJeremy Laird \n",
+    "url": "https://www.pcgamer.com/viewsonic-vp3881-monitor-review/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/LB3W5LjkcfvPbTkEqRtzbb.jpg"
+  },
+  {
+    "title": "Shadow of the Tomb Raider system requirements",
+    "author": "\nBy\n\nPC Gamer \n",
+    "url": "https://www.pcgamer.com/shadow-of-the-tomb-raider-system-requirements/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/Cne4eCsywhVPeoPjkMAfMJ.jpg"
+  },
+  {
+    "title": "How to stink up the road to a Victory Royale with Fortnite’s stink bomb",
+    "author": "\nBy\n\nAron Garst \n",
+    "url": "https://www.pcgamer.com/how-to-stink-up-the-road-to-a-victory-royale-with-fortnites-stink-bomb/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/ekYA3ZzmAMnRhNRWDknBdC.jpg"
+  },
+  {
+    "title": "Best graphics card deals this week",
+    "author": "\nBy\n\nPC Gamer \n",
+    "url": "https://www.pcgamer.com/best-graphics-card-deals-today/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/EMttfZeLJaxqrgnAxogiZF.jpg"
+  },
+  {
+    "title": "Shadow of the Tomb Raider: all Challenge Tomb locations revealed",
+    "author": "\nBy\n\nVikki Blake \n",
+    "url": "https://www.pcgamer.com/shadow-of-the-tomb-raider-challenge-tomb-locations/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/RvbLJktHsdCTPnWpwAY9Ck.jpg"
+  },
+  {
+    "title": "Destiny 2: Forsaken review",
+    "author": "\nBy\n\nAustin Wood \n",
+    "url": "https://www.pcgamer.com/destiny-2-forsaken-review/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/Vc2jRt8rKmhofaPshHvPeh.jpg"
+  },
+  {
+    "title": "Build It: A high-end AMD Ryzen 2 rig",
+    "author": "\nBy\n\nZak Storey \n",
+    "url": "https://www.pcgamer.com/build-it-a-high-end-amd-ryzen-2-rig/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/kVunJhgdfryw7UmNpop9bY.jpg"
+  },
+  {
+    "title": "What is ray tracing, and how does Nvidia's GeForce RTX handle the technology?",
+    "author": "\nBy\n\nJarred Walton \n",
+    "url": "https://www.pcgamer.com/what-is-ray-tracing/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/oqvnP4LRdjQc7UWGDuWosb.jpg"
+  },
+  {
+    "title": "Nvidia Turing architecture deep dive",
+    "author": "\nBy\n\nJarred Walton \n",
+    "url": "https://www.pcgamer.com/nvidia-turing-architecture-deep-dive/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/NapTddeYKnVBYDxsehe9Qb.jpg"
+  },
+  {
+    "title": "World of Warcraft players are sick of how shitty Battle for Azeroth's gear system is",
+    "author": "\nBy\n\nSteven Messner \n",
+    "url": "https://www.pcgamer.com/world-of-warcraft-players-are-sick-of-how-shitty-battle-for-azeroths-gear-system-is/",
+    "pic": "https://cdn.mos.cms.futurecdn.net/7Vbj2VcjBATAsopfbxoyWa.jpg"
+  }
+]

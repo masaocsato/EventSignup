@@ -6,8 +6,8 @@ const Wrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 18px;
-  height: 18px;
+  width: 13px;
+  height: 13px;
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 100%;
