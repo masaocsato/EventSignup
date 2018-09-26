@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 import Marker from "./Marker";
-// import SearchBox from "./SearchBox";
+import SearchBox from "./SearchBox";
 // const google = window.google;
 // import SearchBox from "react-google-maps/lib/components/places/SearchBox";
 
@@ -48,6 +48,7 @@ class SimpleMap extends Component {
             text={"Kreyser Avrora"}
           /> */}
         </GoogleMapReact>
+        <SearchBox />
       </div>
     );
   }

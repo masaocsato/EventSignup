@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-// import Calendar from "react-big-calendar";
-// import DatePicker from "react-datepicker";
-// import moment from "moment";
 import {
   postEvent,
   getAllEvent,
@@ -9,6 +6,9 @@ import {
   deleteEvent
 } from "./service/event.service";
 import SearchBox from "./SearchBox";
+// import Calendar from "react-big-calendar";
+// import DatePicker from "react-datepicker";
+// import moment from "moment";
 // import SearchBox from "react-google-maps/lib/components/places/SearchBox";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
@@ -214,16 +214,9 @@ class App extends Component {
     this.toggle();
   };
 
-  // sendCoords = (lat, lng) => {
-  //   this.setState({
-  //     lat: lat,
-  //     lng: lng
-  //   });
-  // };
-
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: "#ECF0F1" }}>
         {/* <div style={{ height: "300px", display: "flex" }} className="">
           <Calendar
             defaultDate={new Date()}
@@ -346,7 +339,14 @@ class App extends Component {
             </React.Fragment>
           )}
           <div style={{ marginLeft: "20px", marginTop: "10px" }}>
-            <div style={{ marginLeft: "5px" }}>
+            <div
+              style={{
+                marginLeft: "5px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
               <button onClick={this.handleAddNew}>Add New Event</button>
             </div>
             {this.state.events.map((item, index) => (
@@ -355,7 +355,10 @@ class App extends Component {
                   style={{
                     border: "grey solid 1px",
                     margin: "5px",
-                    padding: "20px"
+                    padding: "20px",
+                    borderRadius: "10px",
+                    backgroundColor: "lightgray",
+                    textAlign: "center"
                   }}
                 >
                   <div>
@@ -372,24 +375,7 @@ class App extends Component {
                       {item.EventEndDate}
                     </div>
                   )}
-                  {/* {item.EventDetails && (
-                    <div>
-                      Details:
-                      {item.EventDetails}
-                    </div>
-                  )} */}
-                  {/* {item.Lat && (
-                    <div>
-                      Lat:
-                      {item.Lat}
-                    </div>
-                  )}
-                  {item.Lng && (
-                    <div>
-                      Long:
-                      {item.Lng}
-                    </div>
-                  )} */}
+
                   <button onClick={() => this.handleEditClick(item)}>
                     Edit
                   </button>
@@ -401,8 +387,6 @@ class App extends Component {
             ))}
           </div>
           <div>
-            {/* <MapComponent sendCoords={this.sendCoords} /> */}
-
             <SearchBox
               placeholder={"123 anywhere st."}
               onPlacesChanged={this.handleSearch}
@@ -411,7 +395,6 @@ class App extends Component {
               _onClick={this._onClick}
               onMarkerClick={this.onMarkerClick}
               events={this.state.events}
-              editMode={this.state.addNew}
               lat={this.state.lat}
               lng={this.state.lng}
             />
@@ -423,24 +406,7 @@ class App extends Component {
                 // flexDirection: "row"
               }
             }
-          >
-            {/* {this.state.clickedEvent && (
-              <React.Fragment>
-                <h2>{this.state.clickedEvent.EventName}</h2>
-                <div>
-                  {this.state.clickedEvent.EventStartDate}
-                  {this.state.clickedEvent.EventEndDate && (
-                    <React.Fragment>
-                      {" "}
-                      - {this.state.clickedEvent.EventEndDate}
-                    </React.Fragment>
-                  )}
-                </div>
-                <div>{this.state.clickedEvent.EventDetails}</div>
-                <div />
-              </React.Fragment>
-            )} */}
-          </div>
+          />
         </div>
         <br />
         <br />
