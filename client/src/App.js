@@ -309,12 +309,7 @@ class App extends Component {
                 )}
                 <div style={{ flex: "0 1 auto", padding: "10px" }}>
                   <label>Event Details:</label>
-                  {/* <DatePicker
-                    // inline={true}
-                    dropdownMode="select"
-                    selected={this.state.eventStartDate}
-                    onChange={this.handleChangeStart}
-                  /> */}
+
                   <div>
                     <textarea
                       rows="5"
